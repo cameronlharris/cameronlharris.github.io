@@ -1,0 +1,317 @@
+<!doctype html>
+	<html>
+		<head>
+			<style>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+			body {background-color: white;}
+			h1 {text-align: left; font-family: 'Poppins', sans-serif; color: black;}
+			h2 {text-align: center; font-family: 'Poppins', sans-serif; color: black;}
+			h3 {text-align: center; font-family: 'Poppins', sans-serif; font-size: 30px; color: black;}
+			h4 {text-align: center; font-family: 'Poppins', sans-serif; font-size: 30px; color: black;}			
+			p {font-family: 'Poppins', sans-serif; font-size: 20px; color: black; padding-left: 10px; padding-right: 10px;}
+			P.blocktext {
+    			margin-left: auto;
+    			margin-right: auto;
+    			width: 52em;}
+    		img {width: 98vw;}
+h1 {
+	position: relative;
+	left: 40px;
+	top: 5px;
+	width: 200px;
+}    		
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+top: 50px;
+font-size: 18pt
+}
+
+.topnav {
+  overflow: hidden;
+     float: right;
+     font-family: 'Poppins', sans-serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.topnav a.active {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 3px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.grid-container {
+  margin: auto;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  /*background-color: black;*/
+  padding: 10px;
+}
+.grid-item {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  background-color: white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or "cover" */
+}
+
+.footer {
+  position: absolute;
+  
+  /* Place above nav */
+  bottom: 50px;
+  left: 0px;
+  
+  height: 50px;
+  width: 100%;
+    
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+
+.stickyBottomNav {
+   position: fixed;
+   left: 55vw;
+   bottom: 0;
+   width: 100%;
+   z-index: 5;
+   background-color: white;
+   color: white;
+   text-align: center;
+   text-align: left; font-family: 'Poppins', sans-serif; color: black;  
+}
+
+html, body {
+  /* When there is not enough content */
+  min-height: calc(100vh - 100px);
+  margin: 0px
+}
+
+body {
+  position: relative;
+  /* Sum of heights for footer and nav */
+  padding-bottom: 100px;
+}
+
+.stickyBottomNav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.stickyBottomNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.stickyBottomNav a.active {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 3px;
+  /*background-color: #04AA6D;
+  color: white;*/
+}
+
+.rcorners {
+  /*position: relative;
+  left: 3vw;	
+  border-radius: 25px;*/
+  /*border: 2px solid #73AD21;*/
+  /*border: 2px solid black;
+  width: 90vw;
+  height: 150px;
+  padding: 20px*/
+  margin: 20px;
+  width: 95%;
+  border-radius: 25px;
+  border: 2px solid gray;
+  color: white;
+  background-image: radial-gradient(circle, darkgray 0%, black 100%);
+  /*background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);*/
+  /*background: gray;*/
+}
+
+.rcorners p {
+	color: white;
+}
+
+.line {
+  border-top: 2px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+			</style>
+		</head>
+		<body>
+			<div class="topnav" id="myTopnav">
+  				<a href="statement.html" >Home</a>
+  				<a href="tour.html">Tour</a>
+  				<a href="resources.html">Resources</a>
+  				<a href="podcast.html">Podcast Series</a>
+  				<a href="engaging_theory.html">Engaging Theory</a>  				
+   				<a href="participants.html">Team</a>
+  				<a href="contact.html">Contact</a>
+  				<a href="Acknowledgements.html" class="active">Acknowledgements</a>
+  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   				 <i class="fa fa-bars"></i>
+ 				 </a>
+ 			</div>
+ 			<h1>Encounters with the (im)material</h1>
+ 			<div class="center">	 
+			<h2>Thanks to...</h2>
+			</div>
+			<br>
+<div class="rcorners">			
+<p>All the Wits Art Museum staff for their assistance at every stage of the project and to the Wits Art Museum for the funds contributed to realizing the project, and numerous events.</p>
+</div>
+<div class="rcorners">
+<p>Mark Sinoff, Question Gumede and Dezu Makhubela from Mark Sinoff Exhibits for their expert installation.</p>
+</div>
+<div class="rcorners">
+<p>The UJ students who assisted with the installation and documentation of the exhibition:</p>
+</div>
+<div class="rcorners">
+<p>Kiara Affat, Alexander Milne, Gustave Krantz, Lonwabo Mzamo, Leonardo Sitoe, Bianca Welthagen and Nadia Jardine.</p>
+</div>
+<div class="rcorners">  
+<p>WSoA Music Department for support, and equipment.</p>
+</div>
+<div class="rcorners">
+<p>WSoA Music students for participating in the WAM JAM.</p>
+</div>
+<div class="rcorners">
+<p>WSoA Digital Arts for the loan of a computer.</p>
+</div>
+<div class="rcorners">
+<p>Shan Kearney for the loan of the 6th Amp.</p>
+</div>
+<div class="rcorners">
+<p>Gordon Froud, Department of Visual Art, Faculty of Art Design and Architecture at UJ for support throughout the project, and providing materials for the WAM JAM.</p> 
+</div>
+<div class="rcorners">
+<p>Alexa Pienaar for collaborating on teaching the UJ First year students’ instrument making sculpture project.</p> 
+</div>
+<div class="rcorners">
+<p>Mpho Molikeng for workshops with the students and his performance at the WAM JAM.</p>
+</div>
+<div class="rcorners">
+<p>the NHISS for producing the 20-page education resources that accompanied the exhibition, which visitors received for free.</p> 
+</div>
+<div class="rcorners">
+<p>the NRF for their Knowledge Interchange and Collaboration (KIC) Grant that enabled the ‘Material Encounters’ Symposium.</p> 
+</div>
+<div class="rcorners">
+<p>the TRIP Collective for their support of the symposium and various talks throughout the project.</p> 
+</div>
+<div class="rcorners">
+<p>Ann-Marie Tully, and second-year level Jewelry Design students at the Durban University of Technology for engaging with the exhibition by creating Ashanti inspired charm bracelets.</p> 
+</div>
+</div>
+
+<div class="line">
+ </div> 
+<br>
+  <div class="grid-container">
+    <div class="grid-item">  
+      <a target="_blank" href="https://www.wits.ac.za/wam/"><img width="95" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zYLfwyV9B-DiYEmzpguxWOH92ddAxZ5v0pjBkrzcHPcxRzSsG6ZhYxpUoMD7VN51Iqew1dYsryLgf45j7O66bCae4r=s1600"></a>
+    </div>
+  <div class="grid-item">
+  	<a target="_blank" href="https://www.nihss.ac.za"/><img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-ylA77dwBmDOn3SB7YxKeAnC62y3rBYY378ecgy4ixq6RkIoHuN_zOXpO3CC1RvA1fg5ZnWKI-i1yYnKT8xbDx7ZbAwNQ=s2560"></a>
+ </div>
+<div class="grid-item">
+	<a target="blank" href="https://www.nrf.ac.za/"><img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wkDebfHvQINH4g4rx3sNoXVAANasK6IVtvnc2wK9ep2Djcmg6OJ_oslPLz3x9jKuSJAPwmJGUKdPO24gBGfQxETzEEsw=s2560"></a>
+</div>
+  <div class="grid-item">
+            <a target="_blank" href="https://www.wits.ac.za/wsoa/music/"><img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zheUwa3dujAMojLwD8Y4SciCVQgMh5XNwGtK1oFCjmoFeTTzsPpx8xWka0pD4W9pivTSdCmE32F12ZMk3Ue5s2PdGh1w=s1600"></a>
+  </div>
+  <div class="grid-item">
+  	<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wLseCNuSL_jEGlDW6SLxToFHKCDvjPm-FlkmCWlFKwZ5-1mSlADJzoawS0w6Jzm5kFjjVPWAmG8dpO6na5vEjRXD6F=s2560">
+  </div>
+   <div class="grid-item">
+            <a target="_blank" href="https://www.uj.ac.za/faculties/art-design-and-architecture/"><img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zIiQXMJvTFlT9vpKsQIoLJnzYdEwLamYNoDC65ir-jdpTVE6JGmDCdBbrCzeF-_-CJKLNnvBGlZUOmoFN4kcx0U4mMVg=s1600"></a>
+  </div>
+
+		
+</div> 
+<!--
+<div class="stickyBottomNav">
+  <a href="#home" class="active">Acknowledgements</a>
+  <a href="#news">Site Map</a>
+  <a href="#contact">Web design by Cameron Harris</a>
+</div>
+-->
+
+<!-- Only visible when your at the bottom of the page-->
+<div class="footer">
+</div>
+</body>
+			<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+		</body>
+	</html>	

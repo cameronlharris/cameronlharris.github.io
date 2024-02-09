@@ -1,0 +1,105 @@
+<!doctype html>
+	<html>
+		<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+			<style>
+      .top-left {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+}
+      h1 {font-family: 'Poppins', sans-serif; color: lightgrey; z-index: 1;}
+      p {font-family: 'Poppins', sans-serif; color: black;}
+/*.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 280px;
+  margin: 0 auto;
+}*/
+
+h1 span { 
+    background-color: black; opacity: 0.7; padding-right: 10px; padding-left: 30px; padding-top: 5px; padding-bottom: 5px; 
+}
+.pic {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  background-repeat: no-repeat;
+  -webkit-animation: fade 20s infinite;
+  animation: fade 20s infinite;
+}
+#pic1 {
+  animation-delay: 0s;
+  background-image: url("https://lh3.googleusercontent.com/drive-viewer/AITFw-wEG_O5RrmLSn9UOlx5RzA1y8NVabjLZ75hMXofnbkoo6ZT9Il1OtxO-eVF0eezz9lRZZJQ6FQHAbDdqIsFCh9OaVKHcg=s1600");
+}
+#pic2 {
+  background-image: url("https://lh3.googleusercontent.com/drive-viewer/AITFw-wPcxZRRavsgvhAYjsHr9yTDnOaDYl0sP8VUJMuTXxPTheg9yAvCnV9PoAgjrbcCJ93hFaDbgOJkOjcjAem07VUC1vKrQ=s1600");
+  animation-delay: 5s;
+}
+#pic3 {
+  background-image: url("https://lh3.googleusercontent.com/drive-viewer/AITFw-yl7eQzaypNHEa5nNspK0ISVKb4NCWxlkNUQcobOB-iNAmDknOYVC3ybSCHup4Ul7gCh7cvzGGkbR_L0t89VOmxBgsr4w=s1600");
+  animation-delay: 10s;
+}
+#pic4 {
+  background-image: url("https://lh3.googleusercontent.com/drive-viewer/AITFw-wTVUfZrknoP8F52ky_fUOKX_vu9wgmOhk3Zgufv4IkMfAqRxhutZ3Uu6Z0zBofoDpbvJ4nPR77XHzaUzwlW2TeNy8JFQ=s1600");
+  animation-delay: 15s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  			</style>
+  		</head>	
+  		<body>
+            <h1 class="top-left"><span>Encounters with the (Im)material</span></h1>
+  		<div class='container'>
+        <a href="statement.html"><div class='pic' id='pic1'></div>
+        <div class='pic' id='pic2'></div>
+        <div class='pic' id='pic3'></div>
+        <div class='pic' id='pic4'></div>
+      </div>
+  		</body>
+  	</html>

@@ -9,11 +9,21 @@
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 			body {background-color: white;}
 			h1 {text-align: left; font-family: 'Poppins', sans-serif; color: black;}
-			.contbox {position: relative; width: 99vw;}
-			.bgd {width: 99vw; position: absolute; top: 750px; left: 0px; background: black; padding-top: 5px; padding-bottom: 5px; z-index: 9; opacity: 0.5;}
-      .imgdiv{position: absolute; z-index: -1; width: 99vw;}
-      p {font-family: 'Poppins', sans-serif; color: white; padding-left: 20px; padding-right: 20px; opacity: 1;}
-      #pic {width: 99vw; object-fit: contain;}
+			h2 {text-align: center; font-family: 'Poppins', sans-serif; color: black;}
+			p {font-family: 'Poppins', sans-serif; color: black; padding-left: 10px; padding-right: 10px;}
+			P.blocktext {
+    			margin-left: auto;
+    			margin-right: auto;
+    			width: 52em;}
+    		img {width: 98vw;}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+top: 50px;
+font-size: 18pt
+}
 
 .topnav {
   overflow: hidden;
@@ -46,7 +56,6 @@
   display: none;
 }
 
-
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -72,29 +81,21 @@
 		</head>
 		<body>
 			<div class="topnav" id="myTopnav">
-  				<a href="statement.html" class="active">Home</a>
+  				<a href="statement.html" >Home</a>
   				<a href="tour.html">Tour</a>
   				<a href="resources.html">Resources</a>
-  				<a href="podcast.html">Podcast Series</a>
+  				<a class="active" href="podcast.html">Podcast Series</a>
   				<a href="engaging_theory.html">Engaging Theory</a>  				
    				<a href="participants.html">Team</a>
   				<a href="contact.html">Contact</a>
   				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
    				 <i class="fa fa-bars"></i>
  				 </a>
+ 			</div>
+ 			<h1>Encounters with the (im)material</h1>
+ 			<div class="center">	 
+			<h2>Podcast series</h2>
 			</div>
-			<h1>Encounters with the (im)material</h1>
-			<br>
-      <div class="contbox">
-			<div class="imgdiv">
-				<img id="pic" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSQ_KiCqyfZySSlbYfaeiY2HJ3uoZ10QK736C9M3XiDRFy5DlTfS1Kyl8-THvdd_eQXHbnRHSswh_UBwIgFxSgG6y6Z6w=s1600">
-      </div>
-			<div class="bgd">
-			<p class="first">This exhibition explores the way in which the material and immaterial are connected in the museum through the interrelations between artworks, artists, curators, audiences and ideas. Artworks are the material expression of artist's ideas. Traces of how artworks are created are one way the relation between the artist and their thoughts is made visable. Curators propose ways of interpreting artworks by creating relationships between them in exhibition spaces. Audiences come to their own interpretations of art by engaging with the meanings that artworks hold for them, as well as the ideas presented through the curators' arrangement. By embodying meanings about the imaginary, social and spiritual worlds, artworks collapse notions of the material with the immaterial.</p>
-			<p class="second">Artworks from the Wits Art Museum holdings that explore matter, spirituality, agency, and music are included in order to pose questions about what art is, and how we might understand the relationship between the seen, the invisible, and the audible. Multiple audiences' roles in making meanings from their encounters with artworks is foregrounded in this exhibition.</p>
-			</div>
-    </div>
-
 			<script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -105,5 +106,5 @@ function myFunction() {
   }
 }
 </script>
-		</body>	
-		</html>
+		</body>
+	</html>	

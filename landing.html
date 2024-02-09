@@ -1,0 +1,70 @@
+<!doctype html>
+	<html>
+		<head>
+			<style>
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background: url(background-photo.jpg) center center cover no-repeat fixed;
+
+.container {
+  opacity: 0;
+  animation: fade-in 10s ease-in forwards, fade-out 4s 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+			#box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: white; /* Just to visualize the extent */
+  background-size: cover;
+					}
+
+			#box{  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: white; /* Just to visualize the extent */
+  background-size: cover; 
+
+
+
+  
+  					animation-name: example;
+  					animation-duration: 10s;
+ 					animation-iteration-count: infinite;
+					}
+			@keyframes example{
+   					0%{
+     					background-image: url(<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wTVUfZrknoP8F52ky_fUOKX_vu9wgmOhk3Zgufv4IkMfAqRxhutZ3Uu6Z0zBofoDpbvJ4nPR77XHzaUzwlW2TeNy8JFQ=s1600" alt="Front Encounters with the (im)material sign" width="100%" height="100%">);
+   					}
+   					25%{
+    				 background-image: url(https://lh3.googleusercontent.com/drive-viewer/AITFw-wPcxZRRavsgvhAYjsHr9yTDnOaDYl0sP8VUJMuTXxPTheg9yAvCnV9PoAgjrbcCJ93hFaDbgOJkOjcjAem07VUC1vKrQ=s1600);
+   						}
+   					50%{
+    				 background-image: url(https://lh3.googleusercontent.com/drive-viewer/AITFw-yl7eQzaypNHEa5nNspK0ISVKb4NCWxlkNUQcobOB-iNAmDknOYVC3ybSCHup4Ul7gCh7cvzGGkbR_L0t89VOmxBgsr4w=s1600);
+   						}
+   					75%{
+     				background-image: url(https://lh3.googleusercontent.com/drive-viewer/AITFw-wEG_O5RrmLSn9UOlx5RzA1y8NVabjLZ75hMXofnbkoo6ZT9Il1OtxO-eVF0eezz9lRZZJQ6FQHAbDdqIsFCh9OaVKHcg=s1600);
+   						}
+   					100%{
+    				 background-image: url(https://lh3.googleusercontent.com/drive-viewer/AITFw-xTiSoY03ELRRmoj9ejcKP_aH3YnX45q24h61op7ZDl4lHl-vJtd0YgbwLREH9hFTLG_AEds2vMyBRd-FiCd0lCo41CkA=s1600);
+   						}
+					}
+			</style>
+		</head>
+		<body>
+			<div class="container" id="box"></div>
+		</body>	
+	</html>
