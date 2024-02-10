@@ -15,20 +15,54 @@
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 			body {background-color: white;}
 			h1 {text-align: left; font-family: 'Poppins', sans-serif; color: black;}
-			h2 {text-align: center; font-family: 'Poppins', sans-serif; color: black;}
+			h2 {text-align: center; font-family: 'Poppins', sans-serif; color: white;}
 			p {font-family: 'Poppins', sans-serif; color: black; padding-left: 10px; padding-right: 10px;}
 			P.blocktext {
     			margin-left: auto;
     			margin-right: auto;
     			width: 52em;}
     		img {width: 98vw;}
+.stickyBottomNav {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   z-index: 5;
+   background-color: white;
+   color: white;
+   text-align: center;
+   text-align: left; font-family: 'Poppins', sans-serif; color: black;    
+}
+
+.stickyBottomNav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.stickyBottomNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.stickyBottomNav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 .center {
   margin: auto;
   width: 50%;
   padding: 10px;
   position: relative;
-top: 50px;
-font-size: 18pt
+top: 18px;
+font-size: 18pt;
+z-index: 2;
 }
 
 .topnav {
@@ -63,6 +97,16 @@ font-size: 18pt
   display: none;
 }
 
+img {
+  width: 70%;
+}
+
+
+.imgpos {
+  text-align: center;
+  position: relative;
+  top: -100px;
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -100,9 +144,17 @@ font-size: 18pt
  				 </a>
  			</div>
  			<h1>Encounters with the (im)material</h1>
- 			<div class="center">	 
+ 			<div class="center">
 			<h2>Engaging theory and the curriculum</h2>
 			</div>
+      <div class="imgpos">      
+<img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRkb6loK2qAo5S3YM-tyn66VdZ1On5hrxzjEQPSrJfD3MVEq9uGYxA36LeAZ1cZWA9zZIiamElw6hO2xGc7DeLidhY9=s1600">
+</div>
+      <div class="stickyBottomNav">
+  <a href="Acknowledgements.html">Acknowledgements</a>
+  <a href="#news">Site Map</a>
+  <a href="#contact">Web design by Cameron Harris</a>
+</div>
 			<script>
 function myFunction() {
   var x = document.getElementById("myTopnav");

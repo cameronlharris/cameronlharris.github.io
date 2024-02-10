@@ -15,20 +15,56 @@
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 			body {background-color: white;}
 			h1 {text-align: left; font-family: 'Poppins', sans-serif; color: black;}
-			h2 {text-align: center; font-family: 'Poppins', sans-serif; color: black;}
+			h2 {text-align: center; font-family: 'Poppins', sans-serif; color: white;}
 			p {font-family: 'Poppins', sans-serif; color: black; padding-left: 10px; padding-right: 10px;}
 			P.blocktext {
     			margin-left: auto;
     			margin-right: auto;
     			width: 52em;}
     		img {width: 98vw;}
+
+.stickyBottomNav {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   z-index: 5;
+   background-color: white;
+   color: white;
+   text-align: center;
+   text-align: left; font-family: 'Poppins', sans-serif; color: black;    
+}        
+.stickyBottomNav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.stickyBottomNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.stickyBottomNav a.active {
+  background-color: #04AA6D;
+  color: white;
+}                
 .center {
   margin: auto;
   width: 50%;
   padding: 10px;
   position: relative;
-top: 50px;
-font-size: 18pt
+top: -550px;
+left: 15px;
+font-size: 25pt;
+color: white;
+z-index=2;
 }
 
 .topnav {
@@ -62,6 +98,10 @@ font-size: 18pt
   display: none;
 }
 
+.bib{
+  position: relative;
+  top: -150px;
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -99,9 +139,27 @@ font-size: 18pt
  				 </a>
  			</div>
  			<h1>Encounters with the (im)material</h1>
- 			<div class="center">	 
-			<h2>Resources</h2>
+
+       <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQoHdvQh9604kIt9HJPVQuYC9JxJPLQeXVgBw29tGM2M_JtFSR8x7J_uFImGJu7EqsZCPpjdlgGy6jWE0auqQ76zeJS=s1600"> 
+			<div class="center">   
+      <h2>Resources</h2>
 			</div>
+      <div class="bib">
+<p>Arnason, H. H. 1972. <em>A history of modern art</em> (2 ed.). London and New York: Thames and Hudson.</p>
+<p>Bois, Y.A., B. H. D. Buchloh, H. Foster and R. Krauss. 2004. <em>Art Since 1900: Modernism Antimodernism Postmodernism.</em> London: Thames and Hudson.</p>
+<p>Buskirk, M. 2005. <em>The contingent object of contemporary art.</em> Cambridge Massachusetts: MIT Press.</p>
+<p>Godfrey, T. 1998. <em>Conceptual art.</em> London: Phaidon.</p>
+<p>Harrison, C. and P. Wood (eds.). 2003. <em>Art in Theory 1900 – 2000: An Anthology of Changing Ideas,</em> (New Edition). London: Blackwell Publishing.</p>
+<p>Heartney, E. 2008. <em>Art and today.</em> London and New York: Phaidon.</p>
+<p>Johnstone, S. (ed.). 2008. <em>The Everyday.</em> London and Cambridge, Massachusetts: Co- published by White Chapel Gallery and The MIT Press.</p>
+<p>Kearney, A. 2021. ‘Materiality and Meaning’ in <em>Seen, Heard and Valued: WAM Celebrates 40 Years of the Standard Bank African Art Collection.</em> A.C.E Nettleton and J. Charlton (eds). Johannesburg: Wits Art Museum. 234-239.</p>
+<p>Kearney, A. 2023. <em>Encounters with the (Im)material</em>: Education Resource. Johannesburg: Wits Art Museum.</p>
+</div>                  
+<div class="stickyBottomNav">
+  <a href="Acknowledgements.html">Acknowledgements</a>
+  <a href="#news">Site Map</a>
+  <a href="#contact">Web design by Cameron Harris</a>
+</div>
 			<script>
 function myFunction() {
   var x = document.getElementById("myTopnav");

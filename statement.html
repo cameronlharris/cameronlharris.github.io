@@ -52,6 +52,73 @@
   display: none;
 }
 
+.bgd {
+  position: absolute;
+  z-index: 2;
+  bottom: 5px;
+}
+.footer {
+  position: absolute;
+  
+  /* Place above nav */
+  bottom: 50px;
+  left: 0px;
+  
+  height: 50px;
+  width: 100%;
+    
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+
+.imgdiv {
+  position: relative;
+  z-index: -1;
+}
+.first {
+  position: relative;
+  z-index: 0;
+}
+
+.second {
+  position: relative;
+  z-index: 0;
+}
+.stickyBottomNav {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 50%;
+   z-index: 2;
+   background-color: white;
+   color: white;
+   text-align: center;
+   text-align: left; font-family: 'Poppins', sans-serif; color: black;    
+}
+
+.stickyBottomNav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.stickyBottomNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.stickyBottomNav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -97,9 +164,17 @@
       </div>
 			<div class="bgd">
 			<p class="first">This exhibition explores the way in which the material and immaterial are connected in the museum through the interrelations between artworks, artists, curators, audiences and ideas. Artworks are the material expression of artist's ideas. Traces of how artworks are created are one way the relation between the artist and their thoughts is made visable. Curators propose ways of interpreting artworks by creating relationships between them in exhibition spaces. Audiences come to their own interpretations of art by engaging with the meanings that artworks hold for them, as well as the ideas presented through the curators' arrangement. By embodying meanings about the imaginary, social and spiritual worlds, artworks collapse notions of the material with the immaterial.</p>
-			<p class="second">Artworks from the Wits Art Museum holdings that explore matter, spirituality, agency, and music are included in order to pose questions about what art is, and how we might understand the relationship between the seen, the invisible, and the audible. Multiple audiences' roles in making meanings from their encounters with artworks is foregrounded in this exhibition.</p>
+			<p class="second">Artworks from the Wits Art Museum holdings that explore matter, spirituality, agency, and music are included in order to pose questions about what art is, and how we might understand the relationship between the seen, the invisible, and the audible. Multiple audiences' 
 			</div>
     </div>
+<div class="stickyBottomNav">
+  <a href="Acknowledgements.html">Acknowledgements</a>
+  <a href="#news">Site Map</a>
+  <a href="#contact">Web design by Cameron Harris</a>
+</div>
+
+<!-- Only visible when you're at the bottom of the page-->
+</body>
 
 			<script>
 function myFunction() {

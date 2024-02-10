@@ -22,6 +22,38 @@
     			margin-right: auto;
     			width: 52em;}
     		img {width: 98vw;}
+.stickyBottomNav {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   z-index: 5;
+   background-color: white;
+   color: white;
+   text-align: center;
+   text-align: left; font-family: 'Poppins', sans-serif; color: black;    
+}        
+.stickyBottomNav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.stickyBottomNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.stickyBottomNav a.active {
+  background-color: #04AA6D;
+  color: white;
+}        
 .center {
   margin: auto;
   width: 50%;
@@ -140,6 +172,11 @@ img {
 </div>
 <div id="g">
       <h2 id="email">encounterswiththeimmaterial@gmail.com</h2>
+</div>
+<div class="stickyBottomNav">
+  <a href="Acknowledgements.html">Acknowledgements</a>
+  <a href="#news">Site Map</a>
+  <a href="#contact">Web design by Cameron Harris</a>
 </div>
 			<script>
 function myFunction() {
